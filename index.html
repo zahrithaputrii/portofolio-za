@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Zahritha Putri Novana — Portfolio</title>
+  <meta name="description" content="Portfolio Zahritha Putri Novana. Memadukan estetika UI/UX Design dengan kode Web Development yang clean dan modern.">
+  <meta name="author" content="Zahritha Putri Novana">
+  
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Beranda">ZPN<span class="dot">.</span></a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-glow"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content text-center">
+          <p class="hero-label reveal">UI/UX Designer & Web Developer</p>
+          
+          <h1 class="hero-name reveal">
+            Zahritha <br> <em>Putri</em> Novana
+          </h1>
+          
+          <p class="hero-desc reveal">
+            Berfokus pada UI/UX design dan web development untuk menciptakan pengalaman digital yang sederhana, modern, dan nyaman digunakan.
+          </p>
+          
+          <div class="hero-buttons reveal">
+            <a href="#projects" class="btn btn-primary">Lihat Karya <i class="ri-arrow-down-line"></i></a>
+           <a href="https://drive.google.com/file/d/1F-a_mwM1ihVBIuTZOSS1d__MnOk3M9SR/view?usp=sharing" target="_blank" class="btn btn-outline">Lihat CV <i class="ri-file-list-3-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Selected <em>Projects</em></h2>
+          <p class="section-subtitle">Karya terbaik yang memadukan estetika desain visual dengan fungsionalitas pengembangan web.</p>
+        </div>
+
+        <div class="filter-container reveal">
+          <button class="filter-btn active" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+        </div>
+
+        <div class="project-grid reveal">
+          
+          <article class="project-card glass-card mix web">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-macbook-line"></i><span>Love Wedding Website</span></div>
+              <img src="images/project1.png" alt="Love Wedding Website" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Web Development</span>
+              <h3>Love Wedding Website</h3>
+              <p>Sistem booking wedding berbasis CodeIgniter 4 dengan pengelolaan admin dan manajemen user terintegrasi.</p>
+              <div class="tech-stack">
+                <span>CodeIgniter 4</span><span>PHP</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"><i class="ri-github-fill"></i> GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix web">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-plant-line"></i><span>Website Peduli Lingkungan</span></div>
+              <img src="images/project2.png" alt="Website Peduli Lingkungan" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Web Development</span>
+              <h3>Website Peduli Lingkungan</h3>
+              <p>Platform edukasi interaktif untuk meningkatkan kesadaran masyarakat tentang kelestarian alam dan lingkungan.</p>
+              <div class="tech-stack">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"><i class="ri-github-fill"></i> GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix web">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-id-card-line"></i><span>Sistem KTM Digital</span></div>
+              <img src="images/project3.png" alt="Sistem KTM Digital" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Web Development</span>
+              <h3>Sistem KTM Digital</h3>
+              <p>Digitalisasi Kartu Tanda Mahasiswa untuk merampingkan proses administrasi birokrasi layanan kampus.</p>
+              <div class="tech-stack">
+                <span>Laravel</span><span>Bootstrap</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"><i class="ri-github-fill"></i> GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix web">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-wallet-3-line"></i><span>Sistem Informasi Penggajian</span></div>
+              <img src="images/project4.png" alt="Sistem Informasi Penggajian" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Web Development</span>
+              <h3>Sistem Informasi Penggajian</h3>
+              <p>Aplikasi manajemen data internal karyawan dan kalkulasi penggajian yang aman serta otomatis.</p>
+              <div class="tech-stack">
+                <span>CodeIgniter 4</span><span>PHP</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"><i class="ri-github-fill"></i> GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux featured-card">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-smartphone-line"></i><span>Redesain LinkAja</span></div>
+              <img src="images/linkaja.png" alt="Redesain LinkAja" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>LinkAja AI Finance Assistant</h3>
+              <p>Redesain aplikasi LinkAja dengan penambahan fitur chatbot AI untuk membantu pengguna mencatat pengeluaran, mengatur budget, dan memberikan rekomendasi pengelolaan keuangan secara lebih interaktif dan personal.</p>
+              <div class="tech-stack"><span>Figma</span><span>Wireframing</span><span>User Research</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/proto/a3Ot9H6NZMD3RRUcVmor0Q/Kucing-Miaw_UIA-MIA2025?node-id=564-1680&t=Qla5Oowo91OBWN3n-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=547%3A3292" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-car-line"></i><span>Rental Mobil Website Redesign</span></div>
+              <img src="/images/tagteams.png" alt="Rental Mobil Website Redesign" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>Website Redesign for TagTeamSigns</h3>
+              <p>Redesain tampilan website Tag Team Signs menjadi versi mobile yang lebih modern, clean, dan responsive dengan fokus pada peningkatan visual branding, user experience, serta kemudahan akses informasi layanan signage perusahaan</p>
+              <div class="tech-stack"><span>Figma</span><span>Prototyping</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/IXQgrudtR2ceOSwgUgi1DJ/IMK-Amira-Alyana-Akma-Zahritha-Putri-Novana?node-id=0-1&t=gwDQDhivye1BF62Z-1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-leaf-line"></i><span>Eco Friendly Mobile App</span></div>
+              <img src="images/ui1.png.jpeg" alt="Eco Friendly Mobile App" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>CleanStep – Eco Habit Tracker App</h3>
+              <p>Desain aplikasi mobile bertema lingkungan yang membantu pengguna membangun kebiasaan ramah lingkungan melalui daily task, tracking progress, achievement system, dan artikel edukasi agar aktivitas peduli lingkungan terasa lebih interaktif dan konsisten.</p>
+              <div class="tech-stack"><span>Figma</span><span>Mobile UI</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/gvlFGVBj7RGEG2LXyz1Epw/Untitled?node-id=193-153&t=w7gt7Ft7x4AGDVQF-1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-music-2-line"></i><span>Music Mobile App Design</span></div>
+              <img src="images/vocalearn.png" alt="Music Mobile App Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>VocaLearn</h3>
+              <p>Aplikasi pembelajaran berbasis AI dengan fitur upload dokumen, audio learning, serta penjelasan dan rangkuman otomatis untuk membantu pengguna belajar lebih efektif.</p>
+              <div class="tech-stack"><span>Figma</span><span>Visual Design</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/gvlFGVBj7RGEG2LXyz1Epw/Untitled?node-id=0-1&t=w7gt7Ft7x4AGDVQF-1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+           <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-music-2-line"></i><span>Music Mobile App Design</span></div>
+              <img src="images/music.png" alt="Music Mobile App Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>PLAYS – Music App UI Design</h3>
+              <p>Desain aplikasi musik modern dengan tampilan simple, elegan, dan user-friendly menggunakan Figma.</p>
+              <div class="tech-stack"><span>Figma</span><span>Visual Design</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/proto/M1bF8n1o3Y2k50cclAJdI8/Untitled?node-id=50-2&t=SbD7q2weyMxWJ1Sm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=36%3A10&show-proto-sidebar=1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-heart-3-line"></i><span>Love Wedding UI Design</span></div>
+              <img src="images/titik hijau.png" alt="Love Wedding UI Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>Titik Hijau – Eco Lifestyle Mobile App</h3>
+              <p>Desain aplikasi “Titik Hijau” yang membantu pengguna mendukung gaya hidup ramah lingkungan melalui fitur scan sampah, edukasi daur ulang, eco points, dan pencarian drop point. Dibuat dengan tampilan modern, clean, dan user-friendly menggunakan Figma.</p>
+              <div class="tech-stack"><span>Figma</span><span>Web UI</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/proto/YZlPPi1h1dRPF4qXvJGSZW/Untitled?node-id=2174-277&t=oW0FzIjDa6cQXLco-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2154%3A12550&show-proto-sidebar=1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+             <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-heart-3-line"></i><span>Love Wedding UI Design</span></div>
+              <img src="images/loveweddingw.png" alt="Love Wedding UI Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>Love Wedding Website</h3>
+              <p>Website wedding organizer modern yang dirancang untuk membantu calon pengantin menemukan inspirasi, paket pernikahan, vendor, hingga melakukan reservasi secara lebih praktis dalam satu platform. Fokus desain mengutamakan tampilan elegan, romantis, dan user-friendly dengan alur navigasi yang sederhana agar pengguna dapat mencari layanan pernikahan dengan nyaman dan efisien.</p>
+              <div class="tech-stack"><span>Figma</span><span>Web UI</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/proto/jcPqXkUSwyvA0Vx4x4v5Tz/Tugas-Desain?node-id=3283-4148&t=3ZnVNF3H6CmtfGpK-1&scaling=scale-down&content-scaling=fixed&page-id=2258%3A967&starting-point-node-id=3339%3A3698&show-proto-sidebar=1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+            <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-heart-3-line"></i><span>Love Wedding UI Design</span></div>
+              <img src="images/loveweddingm.png" alt="Love Wedding UI Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>Love Wedding Mobile App</h3>
+              <p>Aplikasi mobile wedding planner dengan desain clean dan aesthetic yang memudahkan pengguna mengatur kebutuhan pernikahan langsung dari smartphone. Mulai dari eksplor vendor, booking layanan, wishlist, hingga timeline persiapan pernikahan dibuat lebih terorganisir melalui pengalaman pengguna yang modern, intuitif, dan interaktif.</p>
+              <div class="tech-stack"><span>Figma</span><span>Web UI</span></div>
+              <div class="project-links">
+                <a href=https://www.figma.com/proto/jcPqXkUSwyvA0Vx4x4v5Tz/Tugas-Desain?node-id=2690-1457&t=APVczMq0c3CLxr0d-1&scaling=scale-down&content-scaling=fixed&page-id=2107%3A366&starting-point-node-id=2690%3A1446&show-proto-sidebar=1"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-store-3-line"></i><span>SIKUMKM Website Design</span></div>
+              <img src="images/sikumkm.png" alt="SIKUMKM Website Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>SIKUMKM – Sistem Pelayanan Publik Koperasi dan UMKM</h3>
+              <p>SIKUMKM merupakan desain UI/UX website pelayanan publik yang dirancang untuk membantu pelaku UMKM dan koperasi dalam mengakses berbagai layanan secara digital, mulai dari registrasi usaha, pengajuan bantuan, pelatihan, konsultasi, hingga pengelolaan data koperasi. Website ini mengusung tampilan modern, interaktif, dan mudah digunakan agar layanan publik terasa lebih cepat, praktis, dan ramah pengguna.</p>
+              <div class="tech-stack"><span>Figma</span><span>Dashboard Design</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/WX2ho4pHFATjudQGNUHtcH/framework-uts?node-id=0-1&t=30va2NnlUtf47KKB-1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card mix uiux">
+            <div class="img-wrap">
+              <div class="placeholder-overlay"><i class="ri-bank-card-line"></i><span>KTM Digital Website Design</span></div>
+              <img src="images/ktm.png" alt="KTM Digital Website Design" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>KTM Digital Website Design</h3>
+              <p>UI/UX design website KTM Digital yang dirancang sebagai solusi digitalisasi identitas mahasiswa berbasis web. Desain berfokus pada kemudahan akses, navigasi yang intuitif, serta tampilan modern untuk meningkatkan pengalaman pengguna dalam mengakses data mahasiswa, verifikasi QR code, informasi akademik, dan layanan kampus secara online.</p>
+              <div class="tech-stack"><span>Figma</span><span>Web UI</span></div>
+              <div class="project-links">
+                <a href="https://www.figma.com/design/jpcRLVFOaanmiJNJ20csCo/Untitled?node-id=0-1&t=n52wN2xbXgfZfIGO-1" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-text reveal">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">Kenali <em>Lebih Dekat</em></h2>
+            <p>Saya merupakan mahasiswi Teknik Informatika di Politeknik Negeri Cilacap yang sedang mengembangkan kemampuan di bidang web development dan UI/UX design.</p>
+            <p>Saya tertarik membuat website dengan tampilan yang sederhana, responsif, dan mudah digunakan agar dapat memberikan pengalaman yang nyaman bagi pengguna.</p>
+          </div>
+          
+          <div class="skills-wrapper reveal">
+            <h3 class="skills-title"><i class="ri-tools-line"></i> Toolkit & Keahlian</h3>
+            <div class="skills-list">
+              <div class="skill-item"><span>UI/UX Design</span></div>
+              <div class="skill-item"><span>Figma & Wireframing</span></div>
+              <div class="skill-item"><span>HTML5 & CSS3</span></div>
+              <div class="skill-item"><span>JavaScript</span></div>
+              <div class="skill-item"><span>PHP & MySQL</span></div>
+              <div class="skill-item"><span>CodeIgniter 4</span></div>
+              <div class="skill-item"><span>Laravel</span></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Mulai <em>Diskusi</em></h2>
+        </div>
+
+        <div class="contact-card glass-card reveal">
+          <div class="contact-info">
+            <h3>Mari Berkolaborasi!</h3>
+            <p>Saya terbuka untuk berdiskusi mengenai project, desain website, maupun peluang magang dan kolaborasi lainnya.</p>
+            <a href="mailto:zahrithaputri@gmail.com" class="email-link">zahrithaputri@gmail.com</a>
+            
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/zahritha-putri/" target="_blank" aria-label="LinkedIn">
+                <i class="ri-linkedin-fill"></i> LinkedIn
+              </a>
+              <a href="https://instagram.com/__ptrnnaaa" target="_blank" aria-label="Instagram">
+                <i class="ri-instagram-line"></i> Instagram
+              </a>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="input-group">
+              <input type="text" id="name" required placeholder="Nama Lengkap">
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required placeholder="Alamat Email">
+            </div>
+            <div class="input-group">
+              <textarea id="message" rows="4" required placeholder="Pesan atau pertanyaan Anda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Kirim Pesan <i class="ri-send-plane-line"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">ZPN<span class="dot">.</span></span>
+        <p>Designing with purpose, building with passion.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://linkedin.com/in/zahritha-putri-novana" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://instagram.com/__ptrnnaaa" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="https://github.com/zahrithaputrii" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="mailto:zahrithaputri@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zahritha Putri Novana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
