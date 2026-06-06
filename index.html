@@ -77,6 +77,8 @@
           <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
         </div>
 
+        <div class="project-grid">
+
           <article class="project-card glass-card mix web">
             <div class="img-wrap">
               <div class="placeholder-overlay"><i class="ri-plant-line"></i><span>Website Peduli Lingkungan</span></div>
@@ -131,7 +133,7 @@
             </div>
           </article>
 
-          <article class="project-card glass-card mix uiux featured-card">
+          <article class="project-card glass-card mix uiux">
             <div class="img-wrap">
               <div class="placeholder-overlay"><i class="ri-smartphone-line"></i><span>Redesain LinkAja</span></div>
               <img src="images/linkaja.png" alt="Redesain LinkAja" loading="lazy" onerror="this.style.opacity='0'">
@@ -139,7 +141,7 @@
             <div class="card-body">
               <span class="card-tag">UI/UX Design</span>
               <h3>LinkAja AI Finance Assistant</h3>
-              <p>Redesain aplikasi LinkAja dengan penambahan fitur chatbot AI untuk membantu pengguna mencatat pengeluaran, mengatur budget, dan memberikan rekomendasi pengelolaan keuangan secara lebih interaktif dan personal.</p>
+              <p>Redesain aplikasi LinkAja dengan penambahan fitur chatbot AI untuk membantu pengguna mencatat pengeluaran, mengatur budget, dan memberikan recommendations pengelolaan keuangan secara lebih interaktif dan personal.</p>
               <div class="tech-stack"><span>Figma</span><span>Wireframing</span><span>User Research</span></div>
               <div class="project-links">
                 <a href="https://www.figma.com/proto/a3Ot9H6NZMD3RRUcVmor0Q/Kucing-Miaw_UIA-MIA2025?node-id=564-1680&t=Qla5Oowo91OBWN3n-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=547%3A3292" target="_blank" class="project-link"><i class="ri-figma-fill"></i> Lihat di Figma</a>
@@ -254,7 +256,7 @@
               <p>Aplikasi mobile wedding planner dengan desain clean dan aesthetic yang memudahkan pengguna mengatur kebutuhan pernikahan langsung dari smartphone. Mulai dari eksplor vendor, booking layanan, wishlist, hingga timeline persiapan pernikahan dibuat lebih terorganisir melalui pengalaman pengguna yang modern, intuitif, dan interaktif.</p>
               <div class="tech-stack"><span>Figma</span><span>Web UI</span></div>
               <div class="project-links">
-                <a href=https://www.figma.com/proto/jcPqXkUSwyvA0Vx4x4v5Tz/Tugas-Desain?node-id=2690-1457&t=APVczMq0c3CLxr0d-1&scaling=scale-down&content-scaling=fixed&page-id=2107%3A366&starting-point-node-id=2690%3A1446&show-proto-sidebar=1"><i class="ri-figma-fill"></i> Lihat di Figma</a>
+                <a href="https://www.figma.com/proto/jcPqXkUSwyvA0Vx4x4v5Tz/Tugas-Desain?node-id=2690-1457&t=APVczMq0c3CLxr0d-1&scaling=scale-down&content-scaling=fixed&page-id=2107%3A366&starting-point-node-id=2690%3A1446&show-proto-sidebar=1"><i class="ri-figma-fill"></i> Lihat di Figma</a>
               </div>
             </div>
           </article>
@@ -306,7 +308,7 @@
             <p>Saya tertarik membuat website dengan tampilan yang sederhana, responsif, dan mudah digunakan agar dapat memberikan pengalaman yang nyaman bagi pengguna.</p>
           </div>
           
-          <div class="skills-wrapper reveal">
+          <div class="skills-wrapper reveal" id="skills">
             <h3 class="skills-title"><i class="ri-tools-line"></i> Toolkit & Keahlian</h3>
             <div class="skills-list">
               <div class="skill-item"><span>UI/UX Design</span></div>
@@ -347,14 +349,16 @@
           </div>
           
           <form class="contact-form" id="contactForm">
+            <input type="hidden" name="access_key" value="e1a2644d-3c7a-49e4-a095-8335ebbd0dfc">
+
             <div class="input-group">
-              <input type="text" id="name" required placeholder="Nama Lengkap">
+              <input type="text" id="name" name="name" required placeholder="Nama Lengkap">
             </div>
             <div class="input-group">
-              <input type="email" id="email" required placeholder="Alamat Email">
+              <input type="email" id="email" name="email" required placeholder="Alamat Email">
             </div>
             <div class="input-group">
-              <textarea id="message" rows="4" required placeholder="Pesan atau pertanyaan Anda..."></textarea>
+              <textarea id="message" name="message" rows="4" required placeholder="Pesan atau pertanyaan Anda..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary full-width">Kirim Pesan <i class="ri-send-plane-line"></i></button>
           </form>

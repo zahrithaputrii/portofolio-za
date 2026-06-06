@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalHtml = submitBtn.innerHTML;
       
@@ -102,20 +103,40 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.style.opacity = '0.7';
 
-      setTimeout(() => {
-        submitBtn.innerHTML = 'Pesan Terkirim <i class="ri-check-line"></i>';
-        submitBtn.style.backgroundColor = '#10b981';
-        submitBtn.style.color = '#ffffff';
-        submitBtn.style.opacity = '1';
-        contactForm.reset();
+      const formData = new FormData(contactForm);
 
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          submitBtn.innerHTML = 'Pesan Terkirim <i class="ri-check-line"></i>';
+          submitBtn.style.backgroundColor = '#10b981';
+          submitBtn.style.color = '#ffffff';
+          submitBtn.style.opacity = '1';
+          contactForm.reset();
+        } else {
+          submitBtn.innerHTML = 'Gagal Mengirim <i class="ri-error-warning-line"></i>';
+          submitBtn.style.backgroundColor = '#ef4444';
+          submitBtn.style.color = '#ffffff';
+        }
+      })
+      .catch(error => {
+        submitBtn.innerHTML = 'Koneksi Error <i class="ri-wifi-off-line"></i>';
+        submitBtn.style.backgroundColor = '#ef4444';
+        submitBtn.style.color = '#ffffff';
+      })
+      .finally(() => {
         setTimeout(() => {
           submitBtn.innerHTML = originalHtml;
           submitBtn.style.backgroundColor = '';
           submitBtn.style.color = '';
           submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
         }, 3000);
-      }, 1500);
+      });
     });
   }
 });
